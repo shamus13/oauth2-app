@@ -1,0 +1,21 @@
+1. generate private key
+openssl genrsa 2048 > host.key
+
+2. generate self signed certificate
+openssl req -new -x509 -nodes -sha256 -days 365 -key host.key > host.crt
+
+3. convert private key to DER form
+openssl pkcs8 -topk8 -inform PEM -in host.key -outform DER -nocrypt -out host.der
+
+4. convert certificate to binary DER form
+openssl x509 -inform pem -outform der -in host.crt -out host.der
+
+5. export certificate and key as a pkcs12
+openssl pkcs12 -export -out host.pkcs12 -inkey host.key -in host.crt -name ca
+
+6. import certificate and key into java keystore
+keytool -importkeystore -deststorepass changeit -destkeypass changeit -destkeystore keystore -srckeystore host.pkcs12 -srcstoretype PKCS12 -srcstorepass changeit -alias ca
+
+7. import certificate into java cacerts truststore
+keytool -importcert -file host.crt -keystore cacerts -alias ca
+

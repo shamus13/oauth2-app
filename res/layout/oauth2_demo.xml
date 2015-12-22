@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <Button android:id="@+id/oauth2_demo_grant_access_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/oauth2_demo_grant_access_button"
+            />
+    <Button android:id="@+id/oauth2_demo_get_user_attributes_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/oauth2_demo_get_user_attributes_button"
+            />
+    <EditText
+            android:id="@+id/oauth2_demo_get_user_attributes_response"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:inputType="none"
+            android:editable="false"
+            />
+
+    <Button android:id="@+id/oauth2_demo_get_time_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/oauth2_demo_get_time_button"
+            />
+    <EditText
+            android:id="@+id/oauth2_demo_get_time_response"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:inputType="none"
+            android:editable="false"
+            />
+
+    <Button android:id="@+id/oauth2_demo_get_message_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/oauth2_demo_get_message_button"
+            />
+    <EditText
+            android:id="@+id/oauth2_demo_get_message_response"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:inputType="none"
+            android:editable="false"
+            />
+
+    <Button android:id="@+id/oauth2_demo_set_message_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/oauth2_demo_set_message_button"
+            />
+    <EditText
+            android:id="@+id/oauth2_demo_set_message_response"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:inputType="text"
+            />
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <Button android:id="@+id/oauth2_demo_open_web_socket_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oauth2_demo_open_web_socket_button"
+                android:enabled="true"
+                />
+        <Button android:id="@+id/oauth2_demo_echo_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oauth2_demo_echo_button"
+                android:enabled="false"
+                />
+        <Button android:id="@+id/oauth2_demo_close_web_socket_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/oauth2_demo_close_web_socket_button"
+                android:enabled="false"
+                />
+    </LinearLayout>
+    <EditText
+            android:id="@+id/oauth2_demo_echo_request"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:inputType="text"
+            />
+    <EditText
+            android:id="@+id/oauth2_demo_echo_response"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:inputType="none"
+            android:editable="false"
+            />
+
+</LinearLayout>
+

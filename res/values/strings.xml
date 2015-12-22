@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OAuth2 Demo</string>
+
+    <string name="oauth2_demo_grant_access_button">Grant Access</string>
+    <string name="oauth2_demo_get_user_attributes_button">Get Attributes</string>
+    <string name="oauth2_demo_get_time_button">Get time</string>
+    <string name="oauth2_demo_get_message_button">Get Message</string>
+    <string name="oauth2_demo_set_message_button">Set Message</string>
+    <string name="oauth2_demo_open_web_socket_button">Open</string>
+    <string name="oauth2_demo_close_web_socket_button">Close</string>
+    <string name="oauth2_demo_echo_button">Echo</string>
+
+    <string name="receive_token_token_status_label">Status</string>
+    <string name="receive_token_token_status_ok">OK</string>
+    <string name="receive_token_error_description_label">Error description</string>
+    <string name="receive_token_error_uri_label">Error description url</string>
+    <string name="receive_token_error_uri_button">Go to error url</string>
+</resources>
